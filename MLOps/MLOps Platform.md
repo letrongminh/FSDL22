@@ -29,3 +29,11 @@ MLOps Platform là nền tảng cung cấp các công cụ cần thiết để p
 - 14. Ngoài data source ở dạng tĩnh (static data), streaming data từ Kafka sẽ ghi liên tục vào Feature Store để cập nhật feature.
 
 ![Alt text](image-2.png)
+
+
+Tài liệu tham khảo:khảo
+
+- https://ml-ops.org/content/end-to-end-ml-workflow
+- https://valohai.com/mlops-platforms-compared/
+- https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
+
