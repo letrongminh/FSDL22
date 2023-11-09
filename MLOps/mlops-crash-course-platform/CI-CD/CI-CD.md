@@ -151,11 +151,22 @@ Jenkins master chịu trách nhiệm:
         - Handling HTTP requests
         - Quản lý môi trường build.
 
-
     9.2 Scaling Jenkins with Cloud Resources
 
+Vertical scaling - Horizontal scaling
 
     9.3 High-Availability Configurations
+Ví dụ về kiến trúc của Netflix:
+![Alt text](image-7.png)
+
+Làm thế nào để Agents giao tiếp với Master ?
+
+#### Communication protocols
+Có 2 cách: SSH và Java web start.
+
+Jenkins master connect với agent qua SSH tieu chuẩn. Jenkins có một SSH client built in, do đó chỉ yêu cầu `SSH daemon - sshd` server.
+
+Java web start là một ứng dụng Java được cài ở mỗi agent và thiết lập TCP để connect đến với Master Java. Phương pháp này sử dụng thường xuyên nếu agent ở trong một firewalled network và master không thể thiết lập kết nối.
 
 ## 10. Best Practices
     10.1 Job Configuration Best Practices
